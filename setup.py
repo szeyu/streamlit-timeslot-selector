@@ -8,6 +8,11 @@ setup(
     description="Streamlit component that allows you to select timeslot",
     packages=find_packages(),
     include_package_data=True,
+    package_data={
+        'timetable_selector': [
+            'frontend/build/*',
+        ],
+    },
     install_requires=[
         'streamlit>=0.63',
     ],
