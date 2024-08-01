@@ -10,6 +10,9 @@ pip install -e git+https://github.com/szeyu/streamlit-timeslot-selector.git@main
 
 ## Usage instructions
 
+### Demo
+[Demo](https://github.com/szeyu/streamlit-timeslot-selector/main/resources/demo.mp4)
+
 ```python
 import streamlit as st
 from timeslot_selector import timeslot_selector
