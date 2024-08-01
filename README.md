@@ -1,21 +1,25 @@
-# streamlit-custom-component
+# streamlit-timeslot-selector
 
-Streamlit component that allows you to do X
+Streamlit component that allows you to select timeslot as json data
 
 ## Installation instructions
 
 ```sh
-pip install streamlit-custom-component
+pip install -e git+https://github.com/szeyu/streamlit-timeslot-selector.git@main#egg=streamlit-timeslot-selector
 ```
 
 ## Usage instructions
 
 ```python
 import streamlit as st
+from timeslot_selector import timeslot_selector
 
-from my_component import my_component
+color = "red"
+days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY']
+start = "08:00"
+end = "20:00"
+interval = 30
 
-value = my_component()
-
-st.write(value)
+json = timeslot_selector(color, days, start, end, interval)
+st.write(json)
 ```
